@@ -5787,8 +5787,8 @@ components:
           minLength: 1
           description: Nickname
         mailer_id:
-          allOf:
-            - $ref: '#/components/schemas/se_id'
+          type: string
+          minLength: 1
           description: A string that uniquely identifies the mailer
         profile_name:
           type: string
@@ -5857,9 +5857,8 @@ components:
           minimum: 0
           description: Merchant id
         mailer_id:
-          type: integer
-          format: int32
-          minimum: 0
+          type: string
+          minLength: 1
           description: Mailer id
         induction_site:
           type: string
