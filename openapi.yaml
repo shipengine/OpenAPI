@@ -6729,10 +6729,10 @@ components:
                   The insurance cost for this package.  Add this to the
                   `shipment_cost` field to get the total cost.
               tracking_number:
-                type: string
-                minLength: 1
                 readOnly: true
-                example: '782758401696'
+                nullable: true
+                allOf:
+                  - $ref: '#/components/schemas/tracking_number'
                 description: >-
                   The tracking number for the package. Tracking number formats
                   vary across carriers.
@@ -7046,10 +7046,10 @@ components:
             The insurance cost for this package.  Add this to the
             `shipment_cost` field to get the total cost.
         tracking_number:
-          type: string
-          minLength: 1
           readOnly: true
-          example: '782758401696'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/tracking_number'
           description: >-
             The tracking number for the package. Tracking number formats vary
             across carriers.
@@ -7998,6 +7998,7 @@ components:
             field of the shipment to be set.
         tracking_number:
           readOnly: true
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/tracking_number'
           description: >
@@ -8336,6 +8337,7 @@ components:
       additionalProperties: false
       properties:
         tracking_number:
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/tracking_number'
         status_code:
