@@ -6798,7 +6798,6 @@ components:
                 writeOnly: true
                 type: boolean
                 default: false
-                deprecated: true
                 description: >-
                   Indicate if this label is being used only for testing
                   purposes. If true, then no charge will be added to your
@@ -7113,7 +7112,6 @@ components:
           writeOnly: true
           type: boolean
           default: false
-          deprecated: true
           description: >-
             Indicate if this label is being used only for testing purposes. If
             true, then no charge will be added to your account.
