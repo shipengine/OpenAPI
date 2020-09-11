@@ -8206,6 +8206,12 @@ components:
           allOf:
             - $ref: '#/components/schemas/display_scheme'
           description: The display format that the label should be shown in.
+        test_label:
+          type: boolean
+          default: false
+          description: >-
+            Indicate if this label is being used only for testing purposes. If
+            true, then no charge will be added to your account. This only works with Stamps.com and Endicia for USPS
     create_label_from_rate_response_body:
       title: create_label_from_rate_response_body
       type: object
@@ -8238,6 +8244,12 @@ components:
           allOf:
             - $ref: '#/components/schemas/display_scheme'
           description: The display format that the label should be shown in.
+        test_label:
+          type: boolean
+          default: false
+          description: >-
+            Indicate if this label is being used only for testing purposes. If
+            true, then no charge will be added to your account. This only works with Stamps.com and Endicia for USPS
     create_label_from_shipment_response_body:
       title: create_label_from_shipment_response_body
       type: object
