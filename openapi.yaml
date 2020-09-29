@@ -8597,6 +8597,7 @@ components:
           description: A string that uniquely identifies the warehouse
         submission_id:
           deprecated: true
+          nullable: true
           type: string
           minLength: 1
           example: 9.475711899564878e+21
