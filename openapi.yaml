@@ -7676,6 +7676,7 @@ components:
       properties:
         customs_item_id:
           readOnly: true
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/se_id'
           description: A string that uniquely identifies the customs item
@@ -7692,9 +7693,9 @@ components:
           default: 0
           description: The quantity of this item in the shipment.
         value:
-          allOf:
-            - $ref: '#/components/schemas/monetary_value'
-          description: The declared customs value of each item
+          type: number
+          format: double
+          description: The declared customs value of each item in USD
         harmonized_tariff_code:
           type: string
           nullable: true
