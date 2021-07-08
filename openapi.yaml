@@ -3890,7 +3890,6 @@ components:
         - forbidden
         - identifier_conflict
         - identifiers_must_match
-        - insufficient_funds
         - invalid_address
         - invalid_billing_plan
         - invalid_field_value
@@ -3915,6 +3914,7 @@ components:
         - verification_failure
         - warehouse_conflict
         - webhook_event_type_conflict
+        - insufficient_funds
         - default_resource_cannot_be_deleted
       description: The error code specified for the failed API Call
     validate_address_request_body:
@@ -5035,7 +5035,6 @@ components:
       enum:
         - access_worldwide
         - amazon_buy_shipping
-        - amazon_shipping_uk
         - apc
         - asendia
         - australia_post
@@ -5061,6 +5060,7 @@ components:
         - sendle
         - stamps_com
         - ups
+        - amazon_shipping_uk
       description: The shipping carriers that are supported by ShipEngine
     connect_carrier_request_body:
       title: connect_carrier_request_body
