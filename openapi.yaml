@@ -3565,6 +3565,7 @@ components:
         name:
           type: string
           minLength: 1
+          nullable: true
           example: John Doe
           description: >
             The name of a contact person at this address.  This field may be set
@@ -3572,6 +3573,7 @@ components:
         phone:
           type: string
           minLength: 1
+          nullable: true
           example: +1 204-253-9411 ext. 123
           description: >
             The phone number of a contact person at this address.  The format of
