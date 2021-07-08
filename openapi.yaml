@@ -3915,6 +3915,7 @@ components:
         - verification_failure
         - warehouse_conflict
         - webhook_event_type_conflict
+        - default_resource_cannot_be_deleted
       description: The error code specified for the failed API Call
     validate_address_request_body:
       title: validate_address_request_body
